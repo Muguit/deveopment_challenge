@@ -44,12 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Application\Interfaces\IFormaGeometrica.cs" />
+    <Compile Include="Application\PresentadorInforme.cs" />
+    <Compile Include="Domain\Entidades\FormaGeometrica.cs" />
+    <Compile Include="Domain\Enumeradores\Idioma.cs" />
+    <Compile Include="Domain\Servicios\GeneradorInformeServicio.cs" />
+    <Compile Include="Domain\Servicios\Interfaces\IGeneradorInformeServicio.cs" />
+    <Compile Include="Infrastructure\Recursos\Recursos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\RecursosManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
